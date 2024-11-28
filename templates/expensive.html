@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+<h1>Most Expensive Tour to Turkey</h1>
+{% block content %}
+<table>
+    <thead>
+        <tr>
+            <th>Country</th>
+            <th>Tour Operator</th>
+            <th>Price</th>
+            <th>Number of Days</th>
+        </tr> 
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ tour['country'] }}</td>
+            <td>{{ tour['tour operator'] }}</td>
+            <td>{{ tour['price'] }}</td>
+            <td>{{ tour['count days'] }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

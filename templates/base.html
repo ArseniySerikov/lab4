@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>Pro Flask</title>
+    {% endif %}
+</head>
+<body>
+    <header></header>
+        <h1 style="font-size: 30px;text-align: center;">Tour agancy</h1>
+
+    </header>
+    <h2 style="text-align: center;">RESULT PAGE</h2>
+    {% block content %}
+    {% endblock %}
+
+</body>
